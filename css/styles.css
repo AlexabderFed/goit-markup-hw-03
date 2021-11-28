@@ -156,7 +156,6 @@ body {
   text-align: center;
   /* outline: 1px solid red; */
   margin-top: 0;
-  margin-bottom: 0;
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -188,9 +187,8 @@ body {
   background-color: var(--primery-bcg-color);
   /* padding-top: 94px;
   padding-bottom: 94px; */
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
-
 /* Заголовок */
 .advantage-title {
   color: var(--title-text-color);
@@ -202,7 +200,6 @@ body {
 }
 /* Текст в секции Наши преимущества */
 .advantage-text {
-  font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -211,7 +208,7 @@ body {
 .work-example {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   /* padding-top: 94px;
   padding-bottom: 94px; */
 }
@@ -232,7 +229,7 @@ body {
   background-color: var(--employees-bcg-color);
   /* padding-top: 94px;
   padding-bottom: 94px; */
-  outline: 2px solid yellowgreen;
+  /* outline: 2px solid yellowgreen; */
 }
 
 /* Заголовок */
