@@ -16,6 +16,11 @@ p {
   padding: 0px;
   margin: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Переменные (var) */
 :root {
   --primery-text-color: #757575;
@@ -26,6 +31,7 @@ p {
   --employees-bcg-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --hero-button-hover-color: #188ce8;
+  --card-set-gap: 30px;
 }
 
 /* Сброс точек и подчеркиваний */
@@ -309,8 +315,35 @@ body {
 /* Секция фильтр-кнопки */
 .filter-button.list {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
+.filter-button > .item:not(last-child) {
+  margin-right: 8px;
+}
+
+/* Карточки проектов */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.project-cards > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
+
+/* .card-thumb {
+  outline: 1 px sold salmon;
+} */
+
+.card-content {
+  padding: 20px 24px;
+}
 /* Заголовок карточек проектов */
 .project-cards-title {
   color: var(--title-text-color);
@@ -330,3 +363,7 @@ body {
 .project-card-link {
   text-decoration: none;
 }
+
+/* .item * {
+  outline: 1px solid violet;
+} */
