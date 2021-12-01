@@ -32,6 +32,7 @@ img {
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --hero-button-hover-color: #188ce8;
   --card-set-gap: 30px;
+  --primery-gap: 30px;
 }
 
 /* Сброс точек и подчеркиваний */
@@ -108,6 +109,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .color__text--logo {
@@ -119,9 +124,25 @@ body {
 }
 
 /* Навигация сайта */
+
 .header-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.flex-header {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-nav > .header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-nav .link:hover,
@@ -131,13 +152,26 @@ body {
 }
 
 /* Контакты */
-.contact .link {
-  color: var(--primery-text-color);
-  text-decoration: none;
+
+.contact {
+  display: flex;
+  margin-left: auto;
 }
 
-.contact .link:hover,
-.contact .link:focus {
+.contact > .contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact .link-item {
+  color: var(--primery-text-color);
+  text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact .link-item:hover,
+.contact .link-item:focus {
   color: var(--accent-color);
 }
 
@@ -239,6 +273,23 @@ body {
   /* outline: 2px solid yellowgreen; */
 }
 
+.employees-cards {
+  display: flex;
+}
+
+.employees-cards > .card-item {
+  margin-right: var(--primery-gap);
+}
+
+.employees-cards > .card-item:last-child {
+  margin-right: 0;
+}
+
+.employees-cards-content {
+  padding-top: var(--primery-gap);
+  padding-bottom: var(--primery-gap);
+  background-color: yellow;
+}
 /* Заголовок */
 .employees-title {
   color: var(--title-text-color);
@@ -313,6 +364,7 @@ body {
 /* Portfolio */
 
 /* Секция фильтр-кнопки */
+
 .filter-button.list {
   margin-bottom: 50px;
   display: flex;
@@ -363,7 +415,13 @@ body {
 .project-card-link {
   text-decoration: none;
 }
+/* .project-filter {
+  background-color: yellow;
+} */
 
-/* .item * {
+.item * {
+  outline: 1px solid violet;
+}
+/* .card-item * {
   outline: 1px solid violet;
 } */
