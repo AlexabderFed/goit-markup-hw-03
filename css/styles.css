@@ -42,8 +42,8 @@ img {
 
 /* Скрытый заголовки */
 .hidden-title {
-  visibility: hidden;
-  /* display: none; */
+  /* visibility: hidden; */
+  display: none;
 }
 
 /* Стилизация кнопки */
@@ -81,10 +81,6 @@ button:focus {
 }
 
 /* Падинги для одинаковых секций */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 /* Body */
 
@@ -192,7 +188,7 @@ body {
   text-align: center;
 
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -241,6 +237,8 @@ body {
 .advantage {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantage-list {
@@ -278,6 +276,7 @@ body {
 .work-example {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
+  padding-bottom: 94px;
 }
 
 .images-box {
@@ -308,6 +307,8 @@ body {
 .employees {
   color: var(--primery-text-color);
   background-color: var(--employees-bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .employees-cards {
@@ -361,9 +362,6 @@ body {
 .page-footer {
   color: var(--primery-bcg-color);
   background-color: var(--hero-footer-bcg-color);
-}
-
-.flex-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -394,6 +392,8 @@ body {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
+
+  margin-bottom: 9px;
 }
 
 .footer-contact .link:hover,
@@ -413,6 +413,10 @@ body {
 /* Portfolio */
 
 /* Секция фильтр-кнопки */
+.project-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .filter-button.list {
   margin-bottom: 50px;
@@ -420,7 +424,7 @@ body {
   justify-content: center;
 }
 
-.filter-button > .item:not(last-child) {
+.filter-button > .item:not(:last-child) {
   margin-right: 8px;
 }
 
