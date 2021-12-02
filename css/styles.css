@@ -31,6 +31,7 @@ img {
   --employees-bcg-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --hero-button-hover-color: #188ce8;
+  --border-color-cards: #eeeeee;
   --card-set-gap: 30px;
   --primery-gap: 30px;
 }
@@ -459,9 +460,9 @@ body {
 /* Контент в карточках */
 .card-content {
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--border-color-cards);
+  border-right: 1px solid var(--border-color-cards);
+  border-left: 1px solid var(--border-color-cards);
 }
 
 /* Заголовок карточек проектов */
