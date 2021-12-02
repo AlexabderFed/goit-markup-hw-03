@@ -42,8 +42,8 @@ img {
 
 /* Скрытый заголовки */
 .hidden-title {
-  /* visibility: hidden; */
-  display: none;
+  visibility: hidden;
+  /* display: none; */
 }
 
 /* Стилизация кнопки */
@@ -74,6 +74,7 @@ button:focus {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
+
   /* outline: 1px solid red; */
   padding-right: 15px;
   padding-left: 15px;
@@ -86,6 +87,7 @@ button:focus {
 }
 
 /* Body */
+
 body {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
@@ -94,6 +96,7 @@ body {
 }
 
 /* Хедер */
+
 .page-header {
   font-weight: 500;
   font-size: 14px;
@@ -183,6 +186,7 @@ body {
 }
 
 /* Секция Герой */
+
 .hero {
   background-color: var(--hero-footer-bcg-color);
   text-align: center;
@@ -233,6 +237,7 @@ body {
 }
 
 /* Секция наши преимущества  */
+
 .advantage {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
@@ -240,11 +245,15 @@ body {
 
 .advantage-list {
   display: flex;
-  flex-basis: calc(100% / 4);
 }
 
-.advantage-list > .item:not(:last-child) {
+.advantage-list > .item {
+  flex-basis: calc(100% / 4);
   margin-right: var(--primery-gap);
+}
+
+.advantage-list > .item:last-child {
+  margin-right: 0;
 }
 
 /* Заголовок */
@@ -265,6 +274,7 @@ body {
 }
 
 /* Секция примеры работ */
+
 .work-example {
   color: var(--primery-text-color);
   background-color: var(--primery-bcg-color);
@@ -272,11 +282,14 @@ body {
 
 .images-box {
   display: flex;
-  flex-basis: calc(100% / 3);
 }
 
-.images-box > .item:not(:last-child) {
+.images-box > .item {
+  flex-basis: calc(100% / 3);
   margin-right: var(--primery-gap);
+}
+.images-box > .item:last-child {
+  margin-right: 0;
 }
 
 /* Заголовок */
@@ -291,6 +304,7 @@ body {
 }
 
 /* Секция сотрудники */
+
 .employees {
   color: var(--primery-text-color);
   background-color: var(--employees-bcg-color);
@@ -298,11 +312,15 @@ body {
 
 .employees-cards {
   display: flex;
-  flex-basis: calc(100% / 4);
 }
 
-.employees-cards > .card-item:not(:last-child) {
+.employees-cards > .card-item {
+  flex-basis: calc(100% / 4);
   margin-right: var(--primery-gap);
+}
+
+.employees-cards > .card-item:last-child {
+  margin-right: 0;
 }
 
 .employees-cards-content {
@@ -424,9 +442,11 @@ body {
   outline: 1 px sold salmon;
 } */
 
+/* Контент в карточках */
 .card-content {
   padding: 20px 24px;
 }
+
 /* Заголовок карточек проектов */
 .project-cards-title {
   color: var(--title-text-color);
@@ -437,12 +457,14 @@ body {
 
   margin-bottom: 4px;
 }
+
 /* Текст карточек проектов */
 .project-cards-text {
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
+
 /* Стилизация ссылки карты проекта */
 .project-card-link {
   text-decoration: none;
